@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+font-family: arial,sans-serif;
+padding: 40px;
+background-color: #f1f1f1;
+}
+
+/*Кнопка*/
+.btn{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(56, 160, 56);
+    color: white;
+    padding: 13px 20px;
+    transition: background-color .3s;
+}
+.btn:hover{
+background-color: rgb(59, 131, 59);
+}
+.btn:active{
+    background-color: rgb(33, 82, 33);  
+}
+.btn:focus{
+    outline:1px solid rgb(63, 184, 63);
+    outline-offset: 3px;
+}
+
+/*Модификатор желтого цвета*/
+.btn_yellow{
+    background-color: #ffb800;
+}
+
+/*Рейтинг*/
+.rating{
+    
+}
+.rating__star{
+    width: 80px;
+}
+
+/*Модификатор размера*/
+.rating__star_size{
+    width: 100px;
+}
+
+/*Карточка*/
+.card{
+background-color: white;
+border-radius: 15px;
+overflow: hidden;
+}
+.card__img{
+display: block;
+width: 100%;
+height: 217px;
+object-fit: cover;
+}
+.card__body{
+    padding: 43px 36px;
+}
+.card__price-rating{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.card__price{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card__rating{
+    margin-left: 20px;
+}
+.card__title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.card__location{
+    display: block;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #999;
+
+}
+/*Модификатор акций*/
+.card_promo{
+ outline: 5px solid #ffb800;
+ position: relative;
+}
+.card_promo::before{
+content: "Акция";
+display: block;
+position: absolute;
+left: 50%;
+top: 0;
+transform: translateX(-50%);
+background-color: #ffb800;
+border-bottom-left-radius:10px ;
+border-bottom-right-radius: 10px;
+padding: 10px 30px;
+color: white;
+font-weight: 700;
+}
+/*Сетка карточек*/
+.cards-list{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.cards-list__item{
+
+}
